@@ -1,1 +1,19 @@
-<h2>Project is started!</h2>
+<mat-sidenav-container class="app-layout">
+  <mat-sidenav mode="side" opened class="app-sidenav">
+    <div class="sidenav-title">Категории</div>
+    <mat-nav-list>
+      @for (category of categories(); track category.id) {
+      <a mat-list-item [attr.aria-label]="'Категория ' + category.title" (click)="handleCategorySelect(category.id)"
+        (keydown)="handleCategoryKeyDown($event, category.id)" [class.is-active]="category.id === selectedCategoryId()">
+        {{ category.title }}
+      </a>
+      }
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="app-content">
+    <div class="content-title">{{ selectedCategoryTitle() }}</div>
+    <div class="content-subtitle">
+      Выберите категорию слева, чтобы увидеть детали.
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

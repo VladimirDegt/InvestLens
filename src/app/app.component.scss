@@ -1,0 +1,34 @@
+.app-layout {
+  height: 100vh;
+}
+
+.app-sidenav {
+  width: 16rem;
+  border-right: 1px solid #e2e8f0;
+}
+
+.sidenav-title {
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.app-content {
+  padding: 1.5rem;
+}
+
+.content-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.content-subtitle {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.is-active {
+  font-weight: 600;
+  background-color: #f1f5f9;
+}

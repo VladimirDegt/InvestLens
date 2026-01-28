@@ -1,8 +1,6 @@
 ---
-name: angular-rules
-description: This is a new rule
+alwaysApply: true
 ---
-
 You are an expert Angular developer.
 
 ## General Principles
@@ -39,3 +37,4 @@ You are an expert Angular developer.
 
 Your answers are always in Russian
 You haven't leave comments in the code
+
