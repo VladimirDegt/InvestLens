@@ -3,6 +3,39 @@ name: angular-rules
 description: This is a new rule
 ---
 
-# Overview
+You are an expert Angular developer.
 
-Insert overview text here. The agent will only see this should they choose to apply the rule.
+## General Principles
+- Use Standalone Components for everything.
+- Prefer constructor injection function over `inject()`.
+- Always use `ChangeDetectionStrategy.OnPush`.
+- Use the new Control Flow Syntax (@if, @for, @switch).
+- Follow the official Angular Style Guide.
+
+## Signals & Reactivity
+- Use Signals for local state and data binding.
+- Use `computed()` for derived state.
+- Use RxJS only for complex asynchronous operations or HTTP calls.
+- Convert Observable to Signal using `toSignal()` when appropriate.
+
+## Component Structure
+- Keep components small and focused on a single responsibility.
+- Extract complex logic into services.
+- Use `input()`, `output()`, and `model()` functions (Signal-based inputs).
+
+## TypeScript & Security
+- Strict typing: avoid 'any', use interfaces or types.
+- Always define return types for functions and methods.
+
+## Style
+- use always scss
+
+## Angular Material & CDK
+- Use Angular Material components for all UI elements where possible.
+- Prefer Material's CDK for complex behaviors (e.g., Overlay, Portal, Drag and Drop).
+- Use `MatTableDataSource` for tables with filtering, sorting, and pagination.
+- Apply styling through the official Material Typography and Elevation mixins.
+- Use `MatDialog` with strongly typed data interfaces for modals.
+
+Your answers are always in Russian
+You haven't leave comments in the code
